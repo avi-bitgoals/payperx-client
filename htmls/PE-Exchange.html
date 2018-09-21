@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="images/favicon.png"  sizes="16x16">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ninja-slider.css">
+    <title>PayperEX | Cryptocurrency Exchange | Payper™ P2P Trading Network </title>
+    <script src="js/ninja-slider.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+ <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+  </head>
+  <body>
+<header class="header">
+<div class="container">
+<div class="row">
+<div class="col-xl-5 col-md-5 col-sm-12 col-12">
+ <div class="logo"><a href="coming_soon.html"><img src="images/Exchange-logo.png" alt=""></a> </div>
+</div>
+<div class="col-xl-4 col-md-2 col-sm-5 col-12 social">
+ <a href="https://www.facebook.com/payperexnet/" target="_blank"><img src="images/facebook.png" alt=""></a><a href="https://twitter.com/PayperExnet" target="_blank"><img src="images/Twitter.png" alt=""></a><a href="https://www.instagram.com/payperexnet/" target="_blank"><img src="images/Insta.png" alt=""></a><a href="https://t.me/PayperEx" target="_blank"><img src="images/Telegram.png" alt=""></a>
+</div>
+<div class="col-xl-3 col-md-5 col-sm-7 col-10 text-align-right">
+  <a href="coming_soon.html" class="exchange_btn">EXCHANGE</a>
+  <a href="coming_soon.html" class="network_btn">NETWORK</a>   
+ <div class="clearfix"></div>
+   <div class="dropdown user">
+        <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         youremail@gmail.com <img src="images/user-img.png"></a>
+        <div class="dropdown-menu user" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item user" href="PE-MyAccount.html">MY ACCOUNT</a>
+          <a class="dropdown-item user" href="index.html">SIGN OUT</a>
+        </div>
+      </div>
+  
+</div>
+</div>
+</div>
+</header>
+ 
+<section class="exchange_pnl">
+<div class="container">  
+<div class="col-lg-12 col-md-12 col-sm-12 col-12 mg_none mobile_view">
+<div class="row">
+ <div class="col-lg-7 col-md-12 col-sm-7 col-7 mobile_view">
+<div class="exc_fompnl">
+ <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Limit</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Market</a>
+  </li>
+ 
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="row">    
+<div class="col-lg-6 col-md-6 col-sm-12 col-12 bor_right">
+<label>Buy <span>PAX</span></label>
+<div class="clear"></div>
+<label>BTC Balance:</label>
+<div class="clear"></div>
+<label>Price:</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field">    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">BTC</span>
+</div>
+<div class="space1"></div>
+
+<label>QTY: &nbsp;&nbsp;</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field">    
+    <button type="button" id="add" class="add">+</button>
+    
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label>Total Cost:</label></div>
+<a href="#" class="buy-btn"><img src="images/buy-btn.png"></a>
+
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-12 bor_right2 bor_right">
+<label>Sell <span>PAX</span></label>
+<div class="clear"></div>
+<label>PAX Balance:</label>
+<div class="clear"></div>
+<label>Price:</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field">    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">BTC</span>
+</div>
+<div class="space1"></div>
+
+<label>QTY: &nbsp;&nbsp;</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field">    
+    <button type="button" id="add" class="add">+</button>
+    
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label>Total Cost:</label></div>
+<a href="#" class="buy-btn"><img src="images/sell-btn.png"></a>
+
+</div>
+</div>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+<div class="row">    
+<div class="col-lg-6 col-md-6 col-sm-12 col-12 bor_right">
+<label>Buy <span>PAX</span></label>
+<div class="clear"></div>
+<label>Available BTC Balance: <span>0.00000000</span></label>
+<div class="clear"></div>
+<label>Price:</label>  <input type="text" class="field1" name="" placeholder="Market Price">
+<div class="space1"></div>
+
+<label>Invest:</label>  <div id="field2">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field3">    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">BTC</span>
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label></label></div>
+<a href="#" class="buy-btn"><img src="images/buy-btn.png"></a>
+
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-12 bor_right2 bor_right">
+<label>Sell <span>PAX</span></label>
+<div class="clear"></div>
+<label>Available PAX Balance: <span>0.00000000</span></label>
+<div class="clear"></div>
+<label>Price:</label>  <input type="text" class="field1" name="" placeholder="Market Price">
+<div class="space1"></div>
+
+<label>QTY: </label>  <div id="field2">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field3">    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">PAX</span>
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label></label></div>
+<a href="#" class="buy-btn"><img src="images/sell-btn.png"></a>
+
+</div>
+</div>
+  </div>
+  </div>  
+</div> 
+
+</div> 
+<div class="col-lg-5 col-md-12 col-sm-5 col-5  mg_none mobile_view">
+  <div style="background:#e05235;" class="select_menu"><select class="select">
+  <option>PAX/BTC</option>
+  <option></option>
+  <option></option>
+</select></div>
+<table class="exc_pricpnl" border="0" cellspacing="0" cellpadding="0">
+<tbody>  
+  <thead style="background:#e05235; width: 100%;">
+<tr><th style="width: 30%;">Price (BTC)</th><th style="width: 31%;">QTY</th><th style="padding:12px 0 2px; width: 35%;">Total Cost<br>(BTC)</th><th ></th><th class="td_none">PAX</th><th class="td_none">Time</th></tr></thead>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+
+
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col td_none"></td><td class="td_none"></td><td class="td_none"></td></tr>
+
+
+  </tbody></table>
+  </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-12 mg_none mobile_view">
+<div class="row">
+<div class="col-lg-7 col-md-12 col-sm-12 col-12">
+<div class="order_expnl">
+<a href="#"><img src="images/open-order.png" alt=""></a>  
+<table class="exc_table">
+<tbody><tr>
+<th>Date</th> 
+<th>Paid</th>
+<th>Type</th>
+<th>Side</th>
+<th>Price</th>
+<th>Pending</th>
+<th>Filled</th>
+<th>Trade Value</th> 
+</tr>  
+<tr>
+<td class="td1"><input type="radio" class="radio" name=""></td>  
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+</tr>
+<tr>
+<td class="td2"><input type="radio" class="radio" name=""></td>  
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+</tr>
+<tr>
+<td class="td1"><input type="radio" class="radio" name=""></td>  
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+</tr>
+<tr>
+<td class="td2"><input type="radio" class="radio" name=""></td>  
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+</tr>
+<tr>
+<td class="td1"><input type="radio" class="radio" name=""></td>  
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+</tr>
+<tr>
+<td class="td2"><input type="radio" class="radio" name=""></td>  
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+</tr>
+</tbody></table>
+<a href="#" class="edit_order" data-toggle="modal" data-target="#exampleModalLong4"><img src="images/edit-order.png" alt=""></a>
+<a href="#" class="edit_order" data-toggle="modal" data-target="#exampleModalLong2"><img src="images/cancel-order.png" alt=""></a>
+</div> 
+</div>  
+<div class="col-lg-5 col-md-12 col-sm-12 col-12 mg_none">
+<div class="exc_fompnl">
+ <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Limit</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Market</a>
+  </li>
+ 
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="row">    
+<div class="col-lg-6 col-md-6 col-sm-6 col-12 bor_right">
+<label>Buy <span>PAX</span></label>
+<div class="clear"></div>
+<label>BTC Balance:</label>
+<div class="clear"></div>
+<label>Price:</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field">    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">BTC</span>
+</div>
+<div class="space1"></div>
+
+<label>QTY: &nbsp;&nbsp;</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field">    
+    <button type="button" id="add" class="add">+</button>
+    
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label>Total Cost:</label></div>
+<a href="#" class="buy-btn"><img src="images/buy-btn.png"></a>
+
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-12 bor_right2 bor_right">
+<label>Sell <span>PAX</span></label>
+<div class="clear"></div>
+<label>PAX Balance:</label>
+<div class="clear"></div>
+<label>Price:</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field">    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">BTC</span>
+</div>
+<div class="space1"></div>
+
+<label>QTY: &nbsp;&nbsp;</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field">    
+    <button type="button" id="add" class="add">+</button>
+    
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label>Total Cost:</label></div>
+<a href="#" class="buy-btn"><img src="images/sell-btn.png"></a>
+
+</div>
+</div>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+<div class="row">    
+<div class="col-lg-6 col-md-6 col-sm-6 col-12 bor_right">
+<label>Buy <span>PAX</span></label>
+<div class="clear"></div>
+<label>Available BTC Balance: <span>0.00000000</span></label>
+<div class="clear"></div>
+<label>Price:</label>  <input type="text" class="field1" name="" placeholder="Market Price">
+<div class="space1"></div>
+
+<label>Invest:</label>  <div id="field2">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field3">    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">BTC</span>
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label></label></div>
+<a href="#" class="buy-btn"><img src="images/buy-btn.png"></a>
+
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-12 bor_right2 bor_right">
+<label>Sell <span>PAX</span></label>
+<div class="clear"></div>
+<label>Available PAX Balance: <span>0.00000000</span></label>
+<div class="clear"></div>
+<label>Price:</label>  <input type="text" class="field1" name="" placeholder="Market Price">
+<div class="space1"></div>
+
+<label>QTY: </label>  <div id="field2">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field3">    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">PAX</span>
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label></label></div>
+<a href="#" class="buy-btn"><img src="images/sell-btn.png"></a>
+
+</div>
+</div>
+  </div>
+  </div>  
+</div> 
+
+</div>  
+</div>
+</div>
+</div>  
+</div> 
+
+ <div class="col-lg-12 col-md-12 col-sm-12 col-12 mg_none">
+  <div class="row">
+  <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+  <div class="grap">
+  <h2>PAX/BTC</h2>  
+   <div class="grap_pnl">
+    <table id="q-graph">
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="qtr" id="q1">
+<th scope="row">21:44:50</th>
+
+</tr>
+<tr class="qtr" id="q2">
+<th scope="row">21:44:55</th>
+
+</tr>
+<tr class="qtr" id="q3">
+<th scope="row">21:44:60</th>
+
+</tr>
+<tr class="qtr" id="q4">
+<th scope="row"></th>
+
+</tr>
+</tbody>
+</table>
+
+<div id="ticks">
+<div class="tick" style="height: 59px;"><p></p></div>
+<div class="tick" style="height: 59px;"><p>1.25</p></div>
+<div class="tick" style="height: 59px;"><p>1.00</p></div>
+<div class="tick" style="height: 59px;"><p></p></div>
+<div class="tick" style="height: 59px;"><p></p></div>
+<div class="tick" style="border:none;"><p>0.00</p></div>
+</div>
+<br>
+
+   </div>  
+  </div> 
+</div>
+<div class="col-lg-5 col-md-12 col-sm-12 col-12  mg_none">
+  <table class="exc_pricpnl" border="0" cellspacing="0" cellpadding="0">
+<tr><div style="background:#e05235;" class="select_menu"><select class="select">
+  <option>PAX/BTC</option>
+  <option></option>
+  <option></option>
+</select></div></tr>    
+<tr><th>Price (BTC)</th><th>QTY</th><th style="padding:12px 0 2px;">Total Cost<br>(BTC)</th><th>Price (BTC)</th><th>PAX</th><th>Time</th></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+
+
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+<tr><td class="org_col"></td><td></td><td></td><td class="grn_col"></td><td></td><td></td></tr>
+
+
+  </table>
+  </div>
+</div>
+ </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-12 mg_none">
+<div class="row">
+<div class="col-lg-7 col-md-12 col-sm-12 col-12">
+<div class="order_expnl">
+<a href="#"><img src="images/open-order.png" alt="" ></a>  
+<table class="exc_table">
+<tr>
+<th>Date</th> 
+<th>Paid</th>
+<th>Type</th>
+<th>Side</th>
+<th>Price</th>
+<th>Pending</th>
+<th>Filled</th>
+<th>Trade Value</th> 
+</tr>  
+<tr>
+<td class="td1"><input type="radio" class="radio" name=""></td>  
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+</tr>
+<tr>
+<td class="td2"><input type="radio" class="radio" name=""></td>  
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+</tr>
+<tr>
+<td class="td1"><input type="radio" class="radio" name=""></td>  
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+</tr>
+<tr>
+<td class="td2"><input type="radio" class="radio" name=""></td>  
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+</tr>
+<tr>
+<td class="td1"><input type="radio" class="radio" name=""></td>  
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+<td class="td1"></td>
+</tr>
+<tr>
+<td class="td2"><input type="radio" class="radio" name=""></td>  
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+<td class="td2"></td>
+</tr>
+</table>
+<a href="#" class="edit_order" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong4"><img src="images/edit-order.png" alt=""></a>
+<a href="#" class="edit_order" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2"><img src="images/cancel-order.png" alt=""></a>
+</div> 
+</div>  
+<div class="col-lg-5 col-md-12 col-sm-12 col-12 mg_none">
+<div class="exc_fompnl">
+ <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Limit</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile1" role="tab" aria-controls="pills-profile" aria-selected="false">Market</a>
+  </li>
+ 
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="row">    
+<div class="col-lg-6 col-md-6 col-sm-6 col-12 bor_right">
+<label>Buy <span>PAX</span></label>
+<div class="clear"></div>
+<label>BTC Balance:</label>
+<div class="clear"></div>
+<label>Price:</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field" />    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">BTC</span>
+</div>
+<div class="space1"></div>
+
+<label>QTY: &nbsp;&nbsp;</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field" />    
+    <button type="button" id="add" class="add">+</button>
+    
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label>Total Cost:</label></div>
+<a href="#" class="buy-btn"><img src="images/buy-btn.png"></a>
+
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-12 bor_right2 bor_right">
+<label>Sell <span>PAX</span></label>
+<div class="clear"></div>
+<label>PAX Balance:</label>
+<div class="clear"></div>
+<label>Price:</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field" />    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">BTC</span>
+</div>
+<div class="space1"></div>
+
+<label>QTY: &nbsp;&nbsp;</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field" />    
+    <button type="button" id="add" class="add">+</button>
+    
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label>Total Cost:</label></div>
+<a href="#" class="buy-btn"><img src="images/sell-btn.png"></a>
+
+</div>
+</div>
+  </div>
+  <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab">
+<div class="row">    
+<div class="col-lg-6 col-md-6 col-sm-6 col-12 bor_right">
+<label>Buy <span>PAX</span></label>
+<div class="clear"></div>
+<label>Available BTC Balance: <span>0.00000000</span></label>
+<div class="clear"></div>
+<label>Price:</label>  <input type="text" class="field1" name="" placeholder="Market Price">
+<div class="space1"></div>
+
+<label>Invest:</label>  <div id="field2">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field3" />    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">BTC</span>
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label></label></div>
+<a href="#" class="buy-btn"><img src="images/buy-btn.png"></a>
+
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-12 bor_right2 bor_right">
+<label>Sell <span>PAX</span></label>
+<div class="clear"></div>
+<label>Available PAX Balance: <span>0.00000000</span></label>
+<div class="clear"></div>
+<label>Price:</label>  <input type="text" class="field1" name="" placeholder="Market Price">
+<div class="space1"></div>
+
+<label>QTY: </label>  <div id="field2">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field3" />    
+    <button type="button" id="add" class="add">+</button>
+    <span class="ext_tx">PAX</span>
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label></label></div>
+<a href="#" class="buy-btn"><img src="images/sell-btn.png"></a>
+
+</div>
+</div>
+  </div>
+  </div>  
+</div> 
+
+</div>  
+</div>
+</div>
+ 
+
+
+
+</div>  
+</div>
+</div>
+</div>
+</section>
+<div class="clearfix"></div>
+<footer class="footer2">
+<div class="container">  
+<div class="footer_bottom2">
+ Copyright © 2017 PayperEX Limited. All Rights Reserved
+</div>
+</div>
+</footer>
+<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content cancel_order">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">CANCEL ORDER</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color:#fff;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <p>Are you sure you want to cancel<br> your order?</p>
+       <div class="btn_pnl">
+<a href="coming_soon.html"><img src="images/yes_btn.png"></a>
+<a href="coming_soon.html"><img src="images/no_btn.png"></a>
+       </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content cancel_order">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">EDIT ORDER</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color:#fff;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body edit-order">
+       <div class="col-lg-9 col-md-9 col-sm-9 col-12 edit-order">
+<label>Buy <span>PAX</span></label>
+<div class="clear"></div>
+<label>Available BTC Balance:<span>0.0000000</span></label>
+<div class="clear"></div>
+<label>Price:</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="0.0000000" min="1" max="100" class="field" />    
+    <button type="button" id="add" class="add">+</button>
+    <span style="color: #9e9e9e; padding: 4px 6px; position: absolute; top: 0;     right: 35%; font-size: 12px;">BTC</span>
+</div>
+<div class="space1"></div>
+<label>QTY: &nbsp;&nbsp;</label>  <div id="field1">
+    <button type="button" id="sub" class="sub">-</button>
+    <input type="text" id="1" value="1" min="1" max="100" class="field" />    
+    <button type="button" id="add" class="add">+</button>
+    
+</div>
+<div class="clear"></div>
+<div style="padding:13px 0 0;"><label>Total Cost:</label></div>
+
+
+</div>
+       <div class="btn_pnl1">
+<a href="coming_soon.html"><img src="images/submit_order.png"></a></div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<script>
+
+$('.add').click(function () {
+    if ($(this).prev().val() < 100) {
+      $(this).prev().val(+$(this).prev().val() + 1);
+    }
+});
+$('.sub').click(function () {
+    if ($(this).next().val() > 1) {
+      if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+    }
+});
+  </script> 
+  </body>
+  </html>
