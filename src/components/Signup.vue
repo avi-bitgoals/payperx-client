@@ -1,10 +1,10 @@
 <template>
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-       aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"
+       aria-labelledby="signUpModalTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">SIGN UP</h5>
+          <h5 class="modal-title" id="signUpModalTitle">SIGN UP</h5>
           <button type="button" class="close" data-dismiss="modal"
                   aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -19,14 +19,10 @@
                      placeholder="password">
               <input type="text" name="" class="text_field"
                      placeholder="confirm password">
-
               <div class="clearfix"></div>
               <a href="#" class="submit_btn log_none"><img
                 src="../images/submit_btn.png"></a>
-              <div class="re-capcha">
-                <div class="g-recaptcha"
-                     data-sitekey="6Lfs-CsUAAAAAOVfIFUExoUMiN2JLrgDn589Bytj"></div>
-              </div>
+              <re-captcha/>
             </form>
           </div>
           <div class="tex1"><p>By Submitting you are agreeing to our <a href="#"
@@ -39,8 +35,18 @@
   </div>
 </template>
 <script>
+  import { mapGetters, mapActions } from 'vuex';
+  import ReCaptcha from './ReCaptcha';
+
 export default {
-  name: 'exampleModalLong',
+  name: 'Signup',
+  components: { ReCaptcha },
+  computed: {
+    ...mapGetters(['isAuthenticated']),
+  },
+  methods: {
+    ...mapActions(['closeModal']),
+  },
 };
 </script>
 <style scoped>

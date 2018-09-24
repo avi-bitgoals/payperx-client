@@ -5,8 +5,8 @@
     <router-view/>
     <div class="clearfix"></div>
     <app-footer/>
-    <example-modal-long/>
-    <example-modal-long1/>
+    <login/>
+    <signup/>
   </div>
 </template>
 
@@ -17,13 +17,13 @@ import 'popper.js/dist/popper.min';
 import './js/ninja-slider';
 import AppHeader from './components/appHeader';
 import AppFooter from './components/appFooter';
-import ExampleModalLong from './components/exampleModalLong';
-import ExampleModalLong1 from './components/exampleModalLong1';
+import Signup from './components/Signup';
+import Login from './components/Login';
 import NavHeader from './components/NavHeader';
 
 export default {
   name: 'App',
-  components: { NavHeader, ExampleModalLong1, ExampleModalLong, AppFooter, AppHeader },
+  components: { NavHeader, Login, Signup, AppFooter, AppHeader },
 };
 </script>
 

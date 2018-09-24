@@ -60,6 +60,9 @@
 .signup{ color: #fff; font-size: 15px; outline:none; font-family: 'robotoblack'; float: right; margin: 13px 12px 5px 15px; }
 .signup span { margin: 3px 0 0 5px; float: right;}
 .signup:hover{text-decoration: none; color:#d8d8d8;}
+.logout{ color: #fff; font-size: 15px; outline:none; font-family: 'robotoblack'; float: right; margin: 13px 12px 5px 15px; }
+.logout span { margin: 3px 0 0 5px; float: right;}
+.logout:hover{text-decoration: none; color:#d8d8d8;}
 .nav{background: #e15529; margin: 0; padding: 0 !important;}
 .nav ul{margin:0; padding: 0;}
 .nav li{margin: 0; padding:0 10px 0 0;}
@@ -192,7 +195,7 @@ section.join_start {padding: 58px 0;text-align: center; background-size: cover; 
  -webkit-box-shadow:0px 4px 6px #575757, inset -1px 0px 2px #ffffff;
  -moz-box-shadow: 0px 4px 6px #575757,  inset -1px 0px 2px #ffffff;
  box-shadow:0px 4px 6px #575757, inset -1px 0px 2px #ffffff;
- 
+
  text-shadow: 1px 1px 0px #1a1a1a;
  filter: dropshadow(color=#1a1a1a, offx=1, offy=1);
 color:#fff;
@@ -221,8 +224,8 @@ font-family: 'robotomedium'; font-size:22px; text-align:center;padding: 10px 21p
  -webkit-box-shadow:0px 4px 6px #575757, inset -1px 0px 2px #ffffff;
  -moz-box-shadow: 0px 4px 6px #575757,  inset -1px 0px 2px #ffffff;
  box-shadow:0px 4px 6px #575757, inset -1px 0px 2px #ffffff;
- 
- 
+
+
  filter: dropshadow(color=#1a1a1a, offx=1, offy=1);
 color:#fff;
 font-family: 'robotomedium'; font-size:28px; text-align:center;padding: 10px 80px;}

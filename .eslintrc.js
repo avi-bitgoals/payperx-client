@@ -26,6 +26,9 @@ module.exports = {
   // add your custom rules here
   rules: {
     // don't require .vue extension when importing
+    "no-alert": "off",
+    "no-shadow": "off",
+    "indent": [2, 2],
     'import/extensions': ['error', 'always', {
       js: 'never',
       vue: 'never'
