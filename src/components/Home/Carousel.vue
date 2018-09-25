@@ -8,7 +8,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100 bnr_height" src="../images/Banner1.jpg"
+                <img class="d-block w-100 bnr_height" src="../../images/Banner1.jpg"
                      alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <div class="container  text-center">
@@ -19,13 +19,13 @@
                         </div>
                         <a href="#" style="top: 30px; position: relative;"
                            v-if="!isAuthenticated" class="banner_btn">
-                            SIGN UP <img src="../images/arro1.png"
+                            SIGN UP <img src="../../images/arro1.png"
                                                             style="margin: -4px 0 0 6px;"></a>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 bnr_height" src="../images/Banner2.jpg"
+                <img class="d-block w-100 bnr_height" src="../../images/Banner2.jpg"
                      alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <div class="container  text-center">
@@ -34,7 +34,7 @@
                         </div>
                         <a href="#" style="top: 30px; position: relative;"
                            v-if="!isAuthenticated" class="banner_btn">
-                            SIGN UP <img src="../images/arro1.png" style="margin: -4px 0 0 6px;">
+                            SIGN UP <img src="../../images/arro1.png" style="margin: -4px 0 0 6px;">
                         </a>
                     </div>
                 </div>

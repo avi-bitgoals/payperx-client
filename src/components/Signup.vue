@@ -35,8 +35,8 @@
   </div>
 </template>
 <script>
-  import { mapGetters, mapActions } from 'vuex';
-  import ReCaptcha from './ReCaptcha';
+import { mapGetters, mapActions } from 'vuex';
+import ReCaptcha from './ReCaptcha';
 
 export default {
   name: 'Signup',

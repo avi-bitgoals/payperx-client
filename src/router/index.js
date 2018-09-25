@@ -8,6 +8,7 @@ import PEContactUs from '@/components/PEContactUs';
 import PEInfoPayperex from '@/components/PEInfoPayperex';
 import PEInfoFAQ from '@/components/PEInfoFAQ';
 import PEInfoGlossary from '@/components/PEInfoGlossary';
+import PEMyAccount from '@/components/PEMyAccount';
 
 Vue.use(Router);
 
@@ -55,6 +56,11 @@ export default new Router({
       path: '/PE-Info-Glossary',
       name: 'PE-Info-Glossary',
       component: PEInfoGlossary,
+    },
+    {
+      path: '/PE-MyAccount',
+      name: 'PE-MyAccount',
+      component: PEMyAccount,
     },
   ],
 });

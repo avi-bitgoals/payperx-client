@@ -24,9 +24,18 @@
                         <a href="coming_soon.html" class="exchange_btn">EXCHANGE</a>
                         <a href="coming_soon.html" class="network_btn">NETWORK</a>
                         <div class="clearfix"></div>
-                        <a href="javascript:void(0)" class="logout btn btn-primary" @click="logout">
-                            <i class="fa fa-user-times" aria-hidden="true"></i>
-                            Logout</a>
+                        <div class="dropdown user">
+                            <a class="nav-link " href="#" id="navbarDropdownMenuLink"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ user && user.email }} <i class="fa fa-user-circle"></i></a>
+                            <div class="dropdown-menu user"
+                                 aria-labelledby="navbarDropdownMenuLink">
+                                <router-link class="dropdown-item user"
+                                             :to="{ name: 'PE-MyAccount'}">MY ACCOUNT
+                                </router-link>
+                                <a class="dropdown-item user" @click="logout">SIGN OUT</a>
+                            </div>
+                        </div>
                     </template>
                     <template v-if="!isAuthenticated">
                         <a href="#" class="signup btn btn-primary" data-toggle="modal"
@@ -48,14 +57,11 @@
     </header>
 </template>
 <script>
-import { mapActions, mapGetters } from 'vuex';
+import { mapActions } from 'vuex';
 
 
 export default {
   name: 'appHeader',
-  computed: {
-    ...mapGetters(['isAuthenticated']),
-  },
   methods: {
     ...mapActions({
       logout: 'logout',

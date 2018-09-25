@@ -6,12 +6,14 @@ Vue.use(Vuex);
 
 const state = {
   isAuthenticated: false,
+  user: localStorage.token && JSON.parse(atob(localStorage.token.split('.')[1])),
 };
 
 const store = new Vuex.Store({
   state,
   getters: {
     isAuthenticated: state => state.isAuthenticated,
+    user: state => state.user,
   },
   actions: {
     logout(context) {

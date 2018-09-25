@@ -83,7 +83,7 @@ a.dropdown-item.bd_none{border: none;}
 .heading_section_grid{ float: left; margin: 20px 0 10px }
 .heading_section_grid h3 { float: left;  font-size: 24px; letter-spacing: 3px;  color: #e15529; font-family: 'robotolight'; font-weight: bold;}
 .slide_down{padding: 50px 0px;}
-.heading_section_grid h3{font-size: 24px ; color:#e15529; font-family: 'robotolight'; font-weight: bold; }
+.heading_section_grid h3{font-size: 24px ; color:#e15529; font-family: 'robotolight'; font-weight: bold;}
 .below_banner{background: #343333; padding: 10px 0 10px;}
 .detail_grids {color: #fff; float:left;}
 .detail_grids p{font-family: 'robotolight'; font-size:16px; line-height: 20px; min-height: 146px; background:url(../images/text_border.png) left bottom no-repeat; padding: 0 0 5px;}
@@ -473,13 +473,13 @@ a.dropdown-item.user { padding: 10px 0;}
 .user_info label span{color:#000;}
 .user_emil{}
 .user_info .text_fd{width:100%; border:1px solid #c5c6c8; color:#cacaca; padding:8px 0 8px 5px; margin:10px 0 10px; font-size:14px;}
-.save_change{text-align: center; width:100%; margin:10px 0 60px;}
+.save_change{text-align: center; margin:10px auto 60px;}
 .pass_pnl{width:50%; margin:60px auto; padding: 20px}
 .pass_pnl .textfild1{border:1px solid #c5c6c8; width:100%;color:#cacaca; padding:8px 0 8px 5px; margin:10px 0 10px; font-size:14px;}
 .user_info .robot_pnl {margin: 20px 0; width: 100%; float: left;}
 .user_info .robot_pnl .check_box{width:20px; height:20px; float: left;}
 .user_info .robot_pnl p{font-size:14px; color:#000; float: left; padding:0 0 0 4px; text-align:center;}
-.chane-password{width:100%; text-align:center;float: left;}
+.chane-password{text-align:center;float: left;}
 .bls_pnl{margin:20px 0;}
 .bls_pnl h4{  font-family: 'robotomedium'; font-size:18px; font-weight:bold; }
 .th_head{font-size:13px;font-weight: bold; text-align: center; border:1px solid #e1e1e1; padding: 0 0 4px;}
