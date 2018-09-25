@@ -77,7 +77,8 @@
                                 <div class="tb_head"><h3>MY WALLET</h3></div>
                                 <div class="bls_pnl">
                                     <h4>Balance:</h4>
-                                    <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+                                    <table cellpadding="0" cellspacing="0"
+                                           border="0" style="width:100%;">
                                         <tr>
                                             <th class="th_head">Trans....</th>
                                             <th class="th_head">Quantity</th>
