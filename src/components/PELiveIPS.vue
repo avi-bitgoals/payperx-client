@@ -6,8 +6,10 @@
           <div class="col-lg-8 col-md-8 col-sm-8 col-12">
             <h2>If you expect that the<br/> Cryptocurrency market
               will<br/><span> go up</span></h2>
-            <a href="PE-LiveIPS-Bull.html" class="bull_btn1">Order CryptEx 5
-              BULL Payper™ </a>
+            <router-link class="bull_btn1" :to="{ name: 'PE-LiveIPS-Bull'}">
+              Order CryptEx 5
+              BULL Payper™
+            </router-link>
             <p>The CryptEx 5 BULL Payper™ is a Cryptocurrencies index which
               consists of the top 5 Cryptocurrencies by market cap.
               It is a modified capitalization-weighted index Consists of
@@ -103,8 +105,10 @@
           <div class="col-lg-8 col-md-8 col-sm-8 col-12">
             <h2>If you expect that the<br/> Cryptocurrency market
               will<br/><span> go down</span></h2>
-            <a href="PE-LiveIPS-Bear.html" class="bull_btn2">Order CryptEx 5
-              BEAR Payper™ </a>
+            <router-link class="bull_btn2" :to="{ name: 'PE-LiveIPS-Bear'}">
+              Order CryptEx 5
+              BEAR Payper™
+            </router-link>
             <p>The CryptEx 5 BEAR Payper™ is a Cryptocurrencies index which
               consists of the top 5 Cryptocurrencies by market cap.
               It is a modified capitalization-weighted index Consists of

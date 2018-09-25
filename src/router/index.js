@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import Home from '@/components/Home';
 import Payper from '@/components/Payper';
 import PELiveIPS from '@/components/PELiveIPS';
+import PELiveIPSBull from '@/components/IPS/Bull';
+import PELiveIPSBear from '@/components/IPS/Bear';
 import PAX from '@/components/PAX';
 import PEContactUs from '@/components/PEContactUs';
 import PEInfoPayperex from '@/components/PEInfoPayperex';
@@ -31,6 +33,16 @@ export default new Router({
       path: '/PE-LiveIPS',
       name: 'PE-LiveIPS',
       component: PELiveIPS,
+    },
+    {
+      path: '/PE-LiveIPS-Bull',
+      name: 'PE-LiveIPS-Bull',
+      component: PELiveIPSBull,
+    },
+    {
+      path: '/PE-LiveIPS-Bear',
+      name: 'PE-LiveIPS-Bear',
+      component: PELiveIPSBear,
     },
     {
       path: '/PAX',
