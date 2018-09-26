@@ -11,6 +11,7 @@ import PEInfoPayperex from '@/components/PEInfoPayperex';
 import PEInfoFAQ from '@/components/PEInfoFAQ';
 import PEInfoGlossary from '@/components/PEInfoGlossary';
 import PEMyAccount from '@/components/PEMyAccount';
+import store from '../store';
 
 Vue.use(Router);
 
@@ -73,6 +74,14 @@ export default new Router({
       path: '/PE-MyAccount',
       name: 'PE-MyAccount',
       component: PEMyAccount,
+      beforeEnter: (to, from, next) => {
+        if (!store.getters.isAuthenticated) {
+          next({ path: '/' });
+        } else {
+          next();
+        }
+      },
     },
   ],
 });
+

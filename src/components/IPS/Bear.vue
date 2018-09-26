@@ -22,13 +22,17 @@
                         <label>Paypers QTY</label>
                         <div class="input-group">
           <span class="input-group-btn">
-              <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+              <button type="button" class="btn btn-danger btn-number"
+                      data-type="minus" data-field="quant[2]">
                <img src="../../images/min.png" alt="">
               </button>
           </span>
-                            <input type="text" name="quant[2]" class="form-control input-number text_fld" value="100" min="10" max="100000">
+                            <input type="text" name="quant[2]"
+                                   class="form-control input-number text_fld"
+                                   value="100" min="10" max="100000">
                             <span class="input-group-btn">
-              <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+              <button type="button" class="btn btn-success btn-number"
+                      data-type="plus" data-field="quant[2]">
                   <img src="../../images/plus.png" alt="">
               </button>
           </span>
@@ -54,13 +58,20 @@
                 </div>
             </div>
             <div class="order_text">
-                <h3>CryptEx 5 is an index that represent the top 5 Cryptocurrencies <br> Bitcoin, Ether, Litecoin, Bitcoin cash and Ripple </h3>
+                <h3>CryptEx 5 is an index that represent the top 5 Cryptocurrencies
+                    <br> Bitcoin, Ether, Litecoin, Bitcoin cash and Ripple </h3>
                 <ul>
-                    <li>The total quantity of CryptEx 5 BEAR Payper™ is 10,000,000  -  No more paypers will be issued.</li>
-                    <li>CryptEx 5 BEAR Payper™ IPS price is 10 PAX </li>
-                    <li>Minimum order  -  10 Paypers</li>
-                    <li>The Payper™ purchase details will be sent to you by mail after you will complete the process. Your paypers will be shown in MY HODL table</li>
-                    <li>You can order Payper™ only with PAX. Don't have PAX, don't worry you can use BTC, ETH, BCH, LTC, credit card or wire transfer to buy PAX. </li>
+                    <li>The total quantity of CryptEx 5 BEAR Payper™ is 10,000,000 -
+                        No more paypers will be issued.
+                    </li>
+                    <li>CryptEx 5 BEAR Payper™ IPS price is 10 PAX</li>
+                    <li>Minimum order - 10 Paypers</li>
+                    <li>The Payper™ purchase details will be sent to you by mail after you will
+                        complete the process. Your paypers will be shown in MY HODL table
+                    </li>
+                    <li>You can order Payper™ only with PAX. Don't have PAX, don't worry you
+                        can use BTC, ETH, BCH, LTC, credit card or wire transfer to buy PAX.
+                    </li>
                 </ul>
             </div>
         </div>
