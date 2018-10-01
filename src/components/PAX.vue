@@ -4,9 +4,12 @@
       <div class="container  text-center">
         <img src="../images/CoinPex.png" alt="">
         <h2> THE WORLD’S <span>FIRST TOKEN</span> <br/> BASED ON BITCOIN</h2>
-        <a href="#" style="top: 30px; position: relative; font-size:20px;"
+        <template v-if="!isAuthenticated">
+        <a href="#" data-toggle="modal"
+           data-target="#signUpModal" style="top: 30px; position: relative; font-size:20px;"
            class="pax_pnl"> JOIN NOW <img src="../images/arro1.png"
                                           style="margin: -4px 0 0 6px;"></a>
+        </template>
       </div>
     </section>
     <section class="pax_token">

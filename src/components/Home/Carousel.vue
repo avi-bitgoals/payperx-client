@@ -18,7 +18,9 @@
                             CRYPTOCURRENCY
                         </div>
                         <a href="#" style="top: 30px; position: relative;"
-                           v-if="!isAuthenticated" class="banner_btn">
+                           v-if="!isAuthenticated" class="banner_btn"
+                           data-toggle="modal"
+                           data-target="#signUpModal">
                             SIGN UP <img src="../../images/arro1.png"
                                                             style="margin: -4px 0 0 6px;"></a>
                     </div>
@@ -33,7 +35,9 @@
                             AND <br>FINANCIAL DIGITAL ASSETS
                         </div>
                         <a href="#" style="top: 30px; position: relative;"
-                           v-if="!isAuthenticated" class="banner_btn">
+                           v-if="!isAuthenticated" class="banner_btn"
+                           data-toggle="modal"
+                           data-target="#signUpModal">
                             SIGN UP <img src="../../images/arro1.png" style="margin: -4px 0 0 6px;">
                         </a>
                     </div>

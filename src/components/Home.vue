@@ -29,16 +29,20 @@
                 </div>
             </div>
         </section>
+        <template v-if="!isAuthenticated">
         <section class="join_start" v-if="!isAuthenticated">
             <div class="container">
                 <div class="insert_signup">
                     <h2>JOIN AND START BENEFIT<br/> FROM THE CRYPTO MARKET TODAY!</h2>
-                    <a href="#" style="top: 20px; position: relative;" class="banner_btn">
+                    <a href="#" style="top: 20px; position: relative;" class="banner_btn"
+                       data-toggle="modal"
+                       data-target="#signUpModal">
                         SIGN UP <img src="../images/arro1.png"
                                      style="margin: -4px 0 0 6px;"></a>
                 </div>
             </div>
         </section>
+        </template>
         <section class="payper">
             <div class="container">
                 <h2>Payper<span>TM</span></h2>
@@ -191,7 +195,6 @@ export default {
     }
 
     li {
-        display: inline-block;
         margin: 0 10px;
     }
 

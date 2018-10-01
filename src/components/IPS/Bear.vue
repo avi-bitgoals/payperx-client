@@ -15,7 +15,7 @@
             <div class="dic_pnl"><img src="../../images/order-50.png"></div>
             -->
 
-            <div class="order_form">
+            <form class="order_form" @submit.prevent="onSubmit">
                 <p>Available Balance: PAX</p>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
@@ -23,40 +23,43 @@
                         <div class="input-group">
           <span class="input-group-btn">
               <button type="button" class="btn btn-danger btn-number"
-                      data-type="minus" data-field="quant[2]">
+                      data-type="minus" data-field="quant[2]" @click="decQty">
                <img src="../../images/min.png" alt="">
               </button>
-          </span>
+              </span>
                             <input type="text" name="quant[2]"
                                    class="form-control input-number text_fld"
-                                   value="100" min="10" max="100000">
+                                   v-model="qty" :min="min" :max="max">
                             <span class="input-group-btn">
-              <button type="button" class="btn btn-success btn-number"
-                      data-type="plus" data-field="quant[2]">
-                  <img src="../../images/plus.png" alt="">
-              </button>
-          </span>
+                  <button type="button" class="btn btn-success btn-number"
+                          data-type="plus" data-field="quant[2]" @click="incQty">
+                      <img src="../../images/plus.png" alt="">
+                  </button>
+              </span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <label>PAX VALUE </label>
-                        <input type="text" name="" class="text_fld1" placeholder="1000">
+                        <input type="text" name="paxVal"
+                               v-model="paxVal" class="text_fld1" placeholder="1000">
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <label>Payment Method</label>
                         <select class="select">
-                            <option>PAX</option>
-                            <option></option>
-                            <option></option>
+                            <option v-for="availablePaymentMethod in availablePaymentMethods"
+                                    v-bind:key="availablePaymentMethod">
+                                {{ availablePaymentMethod.name }}
+                            </option>
                         </select>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <label>EST VALUE</label>
-                        <input type="text" name="" class="text_fld1" placeholder="1000">
+                        <input type="text" name="estVal" v-model="estVal"
+                               class="text_fld1" placeholder="1000">
                     </div>
                     <a href="#" class="order_bt1">ORDER NOW</a>
                 </div>
-            </div>
+            </form>
             <div class="order_text">
                 <h3>CryptEx 5 is an index that represent the top 5 Cryptocurrencies
                     <br> Bitcoin, Ether, Litecoin, Bitcoin cash and Ripple </h3>
@@ -79,8 +82,26 @@
 </template>
 
 <script>
+import IPS from './IPS';
+
 export default {
   name: 'PE-LiveIPS-Bear',
+  mixins: [IPS],
+  data() {
+    return {
+      ipsPrice: 10,
+    };
+  },
+  modules: {
+    onSubmit() {
+      return null;
+    },
+  },
+  computed: {
+    estVal() {
+      return (this.qty * this.paxVal * this.ipsPrice).toFixed(4);
+    },
+  },
 };
 </script>
 

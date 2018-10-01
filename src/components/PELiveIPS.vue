@@ -257,8 +257,8 @@
         <div class="row pax_pnl1 "><p>You can order Paypers only with PAX.<br/>
           Don’t have PAX? Don’t worry you can use BTC, ETH, BCH, LTC to Buy PAX.
         </p></div>
-        <a href="coming_soon.html" class="pax_pnl2">BUY PAX <img
-          src="../images/paper_arro.png" style="margin:0 0 0 10px;"></a>
+        <router-link :to="{name: 'PE-Exchange'}" class="pax_pnl2">BUY PAX <img
+          src="../images/paper_arro.png" style="margin:0 0 0 10px;"></router-link>
         <br/><br/>
       </div>
       <div class="space"></div>

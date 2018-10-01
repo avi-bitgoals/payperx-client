@@ -28,6 +28,17 @@ const appService = {
         });
     });
   },
+  paxOrder(request) {
+    return new Promise((resolve, reject) => {
+      axios.post('/pax-orders', request)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((response) => {
+          reject(response.status);
+        });
+    });
+  }
 };
 
 export default appService;

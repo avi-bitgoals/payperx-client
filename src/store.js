@@ -7,6 +7,10 @@ Vue.use(Vuex);
 const state = {
   isAuthenticated: false,
   user: localStorage.token && JSON.parse(atob(localStorage.token.split('.')[1])),
+  paxVal: 0.0001,
+  availablePaymentMethods: [
+    { name: 'PAX' },
+  ],
 };
 
 const store = new Vuex.Store({
@@ -14,6 +18,8 @@ const store = new Vuex.Store({
   getters: {
     isAuthenticated: state => state.isAuthenticated,
     user: state => state.user,
+    paxVal: state => state.paxVal,
+    availablePaymentMethods: state => state.availablePaymentMethods,
   },
   actions: {
     logout(context) {

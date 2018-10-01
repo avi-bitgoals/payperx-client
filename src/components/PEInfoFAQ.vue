@@ -4,8 +4,8 @@
       <div class="container">
         <h2>GOT A QUESTION?<br>
           BROWSE OUR <span>FAQ’S</span></h2>
-        <p>If you need additional support, <a href="PE-ContactUs.html"> Contact
-          us</a> <br>directly for answers.</p>
+        <p>If you need additional support, <router-link :to="{name: 'PE-ContactUs'}"> Contact
+          us</router-link> <br>directly for answers.</p>
         <div id="accordion">
           <div class="card">
             <div class="card-header" id="headingOne">

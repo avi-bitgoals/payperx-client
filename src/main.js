@@ -10,7 +10,7 @@ Vue.config.productionTip = false;
 
 Vue.mixin({
   computed: {
-    ...mapGetters(['isAuthenticated', 'user']),
+    ...mapGetters(['isAuthenticated', 'user', 'paxVal', 'availablePaymentMethods']),
   },
 });
 

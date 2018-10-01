@@ -52,11 +52,13 @@
         </div>
       </div>
     </section>
-    <section class="join_pnl">
+    <section class="join_pnl" v-if="!isAuthenticated">
       <div class="container text-center">
         <h3>JOIN PAYPEREX AND BECOME PART OF THE WORLD’S FIRST ALTERNATIVE SHARE
           MARKET.</h3>
-        <a href="#" class="pax_pnl" style="font-size:20px;"> JOIN NOW <img
+        <a href="#" class="pax_pnl" style="font-size:20px;"
+           data-toggle="modal"
+           data-target="#signUpModal"> JOIN NOW <img
           src="../images/arro1.png" style="margin: -4px 0 0 6px;"></a>
         <p>For more information:
           <router-link :to="{ name: 'PE-Info-FAQ'}">FAQ</router-link>
